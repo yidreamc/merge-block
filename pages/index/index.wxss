@@ -1,0 +1,137 @@
+.stage {
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+    margin: 0 auto;
+    background: #eee;
+    font-weight: bold;
+}
+
+.box {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    box-sizing: border-box;
+    z-index: 9;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #553B93;
+    color: #346DC3;
+    border: 1px solid transparent;
+}
+
+.box[data-on="1"] {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+.box[data-on="2"] {
+    transition-property: left, top, opacity;
+    transition-duration: 0.2s, 0.2s, 0.1s;
+    transition-delay: 0s, 0s, 0.2s;
+    transition-timing-function: linear;
+    z-index: 0;
+    opacity: 0;
+}
+
+.box[data-on="3"] {
+    transform: translateX(200%);
+}
+
+.box[data-v="1"] {
+    background-color: #B9F349;
+    color: #39AB09;
+}
+
+.box[data-v="2"] {
+    background-color: #56C0FC;
+    color: #0885FD;
+}
+
+.box[data-v="3"] {
+    background-color: #FFC85B;
+    color: #F97719;
+}
+
+.box[data-v="4"] {
+    background-color: #FF7255;
+    color: #FFD099;
+}
+
+.box[data-v="5"] {
+    background-color: #009E86;
+    color: #79E797;
+}
+
+.box[data-v="6"] {
+    background-color: #7762FB;
+    color: #CFBFFD;
+}
+
+.box[data-v="7"] {
+    background-color: #F657C3;
+    color: #FB76BF;
+}
+
+.box[data-v="8"] {
+    background-color: #E62F46;
+    color: #FED0B2;
+}
+
+.box[data-v="9"] {
+    background-color: #FFF733;
+    color: #D15830;
+}
+
+.box[data-v="10"] {
+    background-color: #C43142;
+    color: #FFFDFD;
+}
+
+.r0 {
+    top: 0;
+}
+
+.r1 {
+    top: 20%;
+}
+
+.r2 {
+    top: 40%;
+}
+
+.r3 {
+    top: 60%;
+}
+
+.r4 {
+    top: 80%;
+}
+
+.c0 {
+    left: 0;
+}
+
+.c1 {
+    left: 20%;
+}
+
+.c2 {
+    left: 40%;
+}
+
+.c3 {
+    left: 60%;
+}
+
+.c4 {
+    left: 80%;
+}
+
+.title{
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 5px;
+}

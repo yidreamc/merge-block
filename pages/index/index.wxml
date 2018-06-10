@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class='title'>点击方块进行合并，得到更高的数字</view>
+<view class='stage'>
+  <view wx:for="{{ box_data }}" wx:for-item="item" wx:for-index="r">
+    <view class="box r{{ r }} c{{ c }}" wx:for="{{ item }}" data-set="{{ item.set }}" data-v="{{ item.v }}" data-on="{{ item.on }}" data-r="{{ item.r }}" data-c="{{ item.c }}" wx:for-index="c" bindtap="sBox">
+        {{ item.v }}
+    </view>
+  </view>
+</view>
